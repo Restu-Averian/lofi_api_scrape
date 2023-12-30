@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import albumData from "../constants/albumData";
 
-export async function GET(req: Response) {
+export async function GET(req: Request) {
   try {
     return NextResponse.json(
       {

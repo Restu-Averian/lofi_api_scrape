@@ -8,7 +8,7 @@ interface dataLofiProps {
   title: string | null;
   imageUrl: string | null;
 }
-export async function GET(req: Response) {
+export async function GET(req: Request) {
   try {
     const url = new URL(req.url);
     const searchParam = new URLSearchParams(url.searchParams);
