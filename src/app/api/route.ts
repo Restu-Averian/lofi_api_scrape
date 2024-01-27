@@ -5,7 +5,7 @@ export async function GET(req: Request) {
   try {
     return NextResponse.json(
       {
-        message: "success",
+        message: "success get album data",
         data: albumData,
         status: 200,
       },
